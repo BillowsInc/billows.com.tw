@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+/*- global -*/
+body{ background:#fff;font:13px/100% "微軟正黑體","Microsoft JhengHei",Arial,Helvetica,sans-serif; color:#555}
+/*- global -*/
+/*- layout css -*/
+/*- global -*/
+.left{float: left}
+.right{float: right}
+.alignCenter{text-align: center}
+.alignRight{text-align: right}
+.clear{clear:both}
+a{text-decoration:none}
+.clearfix:before, .clearfix:after {content: "";display:table}
+.clearfix:after{clear:both}
+.clearfix{zoom:1}
+/*- global -*/
+/*- layout css end-*/

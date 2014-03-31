@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	border: 0;
+	outline: 0;
+	font-size:13px;
+	vertical-align: baseline;
+	background: transparent;
+	margin: 0;
+	padding: 0}
+body{line-height:180%}
+img {border: 0}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block}
+nav ul, ul, ol {list-style:none}
+/*ul li, ol li{list-style-type:none \9}*/
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after, q:before, q:after {content: none}
+/*table {border-collapse: collapse;border-spacing: 0}*/
+hr {display: block;border: 0;margin: 0;padding: 0}
+input, select {vertical-align: middle}
+input, button, textarea, select, optgroup, option {font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit}
+input[type="submit"], input[type="button"], input[type="checkbox"], input[type="radio"], input[type="reset"], button{cursor: pointer}
