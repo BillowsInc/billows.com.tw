@@ -24,8 +24,26 @@ body{ background:#fff url(../images/bg.png) repeat-x;font:100%/100% "微軟正�
 .logo{margin: 0 auto 65px;padding-top: 50px}
 #home > .summary{position: relative}
 #home > .summary > ul{position: absolute}
-#home > .summary > ul > li{display: inline-block;width: 310px}
+#home > .summary > ul > li{display: inline-block;width: 220px}
 #home > .summary > ul > li > a{display: block;text-indent: -9999px;height: 310px}
+#home .summary .list-news > li{
+	width: 100%;
+}
+#home h3{
+	font-size: 167%;
+	color: #0099b0;
+	line-height: 100%;
+	margin-top: 30px;
+	border-left:5px solid #2b828d;
+	padding-left:10px}
+.list-news{margin-top: 10px;}
+.date, .news-txt{
+	display: inline-block;
+}
+.date{
+	color: #999;
+	margin-right: 10px;
+	}
 /*-- index set ---*/
 /*-- about set ---*/
 .summary {padding-bottom:50px}
@@ -36,6 +54,7 @@ body{ background:#fff url(../images/bg.png) repeat-x;font:100%/100% "微軟正�
 	line-height:180%;
 	font-weight: normal;
 	margin-bottom:30px}
+.summary p{margin-bottom: 10px;}
 .summary p, .txtTitle, .useBoxSecond ul > li, .showCaseBox ul li{font-size:123.1%}
 .box > ul > li  p, .txtTitle, .iotBox ul > li p{color: #0099b0}
 .aboutBox ul > li, .useBox ul > li{display: inline-block;}
@@ -58,16 +77,94 @@ body{ background:#fff url(../images/bg.png) repeat-x;font:100%/100% "微軟正�
 	margin-bottom: 20px;
 	padding-left: 20px;
 	font-weight: normal}
+.useBoxSecond .box ul:nth-child(1)  {
+	margin-top: 30px
+}
 .useBoxSecond ul{margin-left: 10px}
 .useBoxSecond ul > li{width: 45%;float: left;margin-bottom: 15px}
 /*.useBoxSecond ul > li > .left{width: 136px}*/
 .useBoxSecond ul > li > .right{width:280px;padding-top:20px}
 .txtTitle{font-size: 138.5%;font-weight: bold;margin-bottom: 10px}
 .useBoxSecond ul > li ul{padding-left: 20px}
-.useBoxSecond ul > li ul > li, .showCaseBox ul > li{width: 100%;
+.useBoxSecond ul > li ul > li, .showCaseBox ul > li,
+.list-portal li, .list-log > li{width: 100%;
 	list-style-type:disc;
 	margin-bottom: 0}
+.list-portal li{
+	font-size: 123.1%;
+	margin: 5px 0 10px 35px;
+}
+.manage-pic{
+	background: url(../images/security-portal.png) center 0 no-repeat;
+	position: relative;
+	width: 776px;
+	height: 449px;
+	margin: 0 auto;
+	z-index: 1;
+}
+.manage-pic a{
+	position: absolute;
+	display: block;
+	text-indent: 110%;
+	white-space: nowrap;
+	cursor:default;
+	overflow: hidden;
+}
+.manage-pic .step1{
+	width: 220px;
+	height: 190px;
+	left: 68px;
+	top: 236px;
+	z-index: 1;
+}
+/*.manage-pic .step1:hover{
+	background: url(../images/security-portal-1.png) 0 0 no-repeat;
+}*/
+.manage-pic .step2{
+	width: 190px;
+	height: 360px;
+	left: 320px;
+	top: 80px;
+	z-index: 2;
+}
+/*.manage-pic .step2:hover{
+	background: url(../images/security-portal-2.png) 0 0 no-repeat;
+}*/
+.manage-pic .step3{
+	width: 210px;
+	height: 350px;
+	right: 83px;
+	top: 0;
+	z-index: 3;
+}
+/*.manage-pic .step3:hover{
+	background: url(../images/security-portal-3.png) 0 0 no-repeat;
+}*/
 .useBoxSecond .attack > li{width: 50%}
+.aliem-box .summary{
+	padding-bottom: 50px;
+	position: relative;
+	z-index: 1;
+}
+.bg-mask{
+	position: absolute;
+	z-index: 2;
+	background-color: #fff;
+	width: 960px;
+	height: 166px;
+	left: 0;
+	bottom: 0;}
+.box-alienvault{
+	margin-top: 50px;
+	border-bottom: 1px solid #bcbcbc;
+	position: relative;
+	z-index: 1;
+}
+.box-alienvault img{
+	width: 651px;
+	margin: 0 auto;
+	display: block;}
+
 /*-- useSecond set ---*/
 /*-- show Case set ---*/
 .showCaseBox .title > h5, .iotBox .title > h4{
@@ -85,7 +182,7 @@ body{ background:#fff url(../images/bg.png) repeat-x;font:100%/100% "微軟正�
 .showCaseBox ul{margin-left: 10px}
 .showCaseBox ul li{font-size:123.1%}
 .showCaseBox ul > li{margin-left: 20px}
-.showCaseBox  ol > li{list-style-type: decimal;margin-left: 20px}
+.showCaseBox  ol > li, .list-decimal li{list-style-type: decimal;margin-left: 20px}
 .showCaseBox  ol > li > ul{margin-left: 0}
 .showCaseBox  ol > li > ul > li{list-style-type: none;margin-left: 0}
 /*-- show Case set ---*/
@@ -98,10 +195,19 @@ body{ background:#fff url(../images/bg.png) repeat-x;font:100%/100% "微軟正�
 	font-weight: normal;
 	padding-left: 20px}
 .bigDataBox .box{padding-bottom:20px;margin-bottom: 20px}
-.bigDataBox .firstBox + .box {border-bottom:1px dotted #020202}
-.bigDataBox .firstBox{width: 90%;margin: 0 auto 270px;border-bottom: none;padding-bottom: 10px}
+/*.bigDataBox .firstBox + .box {border-bottom:1px dotted #020202}*/
+.bigDataBox .firstBox{width: 90%;margin: 0 auto 50px;border-bottom: none;padding-bottom: 10px}
 .bigDataBox .firstBox .left{margin-right: 15px}
 .bigDataBox .firstBox p{margin-top:15px}
+.list-log{
+	margin: 10px 0 20px 35px;
+}
+.list-log li{
+	font-size: 123.1%;
+}
+.list-log > li{
+
+}
 /*-- Big Data set ---*/
 /*-- iot set ---*/
 .iotBox .box{width:99%;margin: 0 auto}
@@ -111,6 +217,10 @@ body{ background:#fff url(../images/bg.png) repeat-x;font:100%/100% "微軟正�
 .iotBox ul + ul{margin: 0 40px 0 0}
 .iotBox ul > li{display: inline-block;width: 200px;vertical-align: top}
 .iotBox ul > li p{font-weight: bold}
+.list-logo li{
+	display: inline-block;
+	margin: 0 75px 30px}
+.list-logo .last{margin-right: 0;}
 /*-- iot set ---*/
 /*-- Contact set ---*/
 .contactBox .box{width: 90%;margin: 0 auto}

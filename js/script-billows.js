@@ -13,11 +13,96 @@ $(function(){
 	$usedForBox = $('#usedFor'),
 	$usedFor1Box = $('#usedFor1'),
 	$usedFor2Box = $('#usedFor2'),
+	$adviser = $('#adviser'),
 	$downloadBtn = $('.downloadBtn > li'),
+	$managePic = $('#managePic'),
+	$managePicA = $managePic.find('a'),
+	$globeOuter = $('#globeOuter'),
+	$globeMiddle = $('#globeMiddle'),
+	$btnBm = $('#btnBm'),
+	$btnSiem = $('#btnSiem'),
+	$btnTd = $('#btnTd'),
+	$btnAd = $('#btnAd'),
+	$btnVa = $('#btnVa'),
+	$otx = $('#otx'),
+	$infoInt = $('#infoInt'),
+	$infoBm = $('#infoBm'),
+	$infoSiem = $('#infoSiem'),
+	$infoTd = $('#infoTd'),
+	$infoAd = $('#infoAd'),
+	$infoVa = $('#infoVa'),
 	_containerArray = [],
 	isClick = false;
 
-
+	console.log($managePicA);
+	$globeOuter.hover(function(){
+		$otx.stop(false, true).fadeIn(200);
+	},function(){
+		$otx.stop(false, true).fadeOut(200);
+	});
+	$globeMiddle.hover(function(){
+		$infoInt.stop(false, true).fadeIn(200);
+	},function(){
+		$infoInt.stop(false, true).fadeOut(200);
+	});
+	$btnBm.hover(function(){
+		$infoBm.stop(false, true).fadeIn(200);
+	},function(){
+		$infoBm.stop(false, true).fadeOut(200);		
+	});
+	$btnSiem.hover(function(){
+		$infoSiem.stop(false, true).fadeIn(200);
+	},function(){
+		$infoSiem.stop(false, true).fadeOut(200);
+	});
+	$btnTd.hover(function(){
+		$infoTd.stop(false, true).fadeIn(200);
+	},function(){
+		$infoTd.stop(false, true).fadeOut(200);
+	});
+	$btnAd.hover(function(){
+		$infoAd.stop(false, true).fadeIn(200);
+	},function(){
+		$infoAd.stop(false, true).fadeOut(200);
+	});
+	$btnVa.hover(function(){
+		$infoVa.stop(false, true).fadeIn(200);
+	},function(){
+		$infoVa.stop(false, true).fadeOut(200);
+	});
+	$managePicA.eq(0).hover(function(){
+		$managePic.css({
+			'background' : 'url(images/security-portal-1.png)',
+			'z-index' : 5 
+		});
+	},function(){
+		$managePic.css({
+			'background' : 'url(images/security-portal.png)',
+			'z-index' : 1 
+		});
+	});
+	$managePicA.eq(1).hover(function(){
+		$managePic.css({
+			'background' : 'url(images/security-portal-2.png)',
+			'z-index' : 5 
+		});
+	},function(){
+		$managePic.css({
+			'background' : 'url(images/security-portal.png)',
+			'z-index' : 1 
+		});
+	});
+	$managePicA.eq(2).hover(function(){
+		$managePic.css({
+			'background' : 'url(images/security-portal-3.png)',
+			'z-index' : 5 
+		});
+	},function(){
+		$managePic.css({
+			'background' : 'url(images/security-portal.png)',
+			'z-index' : 1 
+		});
+	});
 	//banner Btn
 	//_usedForBoxTop = $usedForBox.offset();
 	$bannerBtn.eq(0).click(function(e){
@@ -36,6 +121,12 @@ $(function(){
 		e.preventDefault();
 		$htmlBody.stop().animate({
 			scrollTop:$usedFor2Box.offset().top
+		});
+	});
+	$bannerBtn.eq(3).click(function(e){
+		e.preventDefault();
+		$htmlBody.stop().animate({
+			scrollTop:$adviser.offset().top
 		});
 	});
 
@@ -100,8 +191,8 @@ $(function(){
 			$('.current').removeClass("current");
 			scrollTop = scrollTop;
 
-			if(scrollTop >= _containerArray[9].top){
-				$scrollBtn.hide(); crollBtnClickTimes = 9;
+			if(scrollTop >= _containerArray[11].top){
+				$scrollBtn.hide(); crollBtnClickTimes = 11;
 			}else{
 				$scrollBtn.show();
 			}
