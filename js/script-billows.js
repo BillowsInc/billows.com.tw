@@ -191,8 +191,8 @@ $(function(){
 			$('.current').removeClass("current");
 			scrollTop = scrollTop;
 
-			if(scrollTop >= _containerArray[11].top){
-				$scrollBtn.hide(); crollBtnClickTimes = 11;
+			if(scrollTop >= _containerArray[10].top){
+				$scrollBtn.hide(); crollBtnClickTimes = 10;
 			}else{
 				$scrollBtn.show();
 			}

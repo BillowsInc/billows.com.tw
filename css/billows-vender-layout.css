@@ -163,7 +163,7 @@ a {
 }
 #otx{
     width: 390px;
-    left: 680px;
+    left: 290px;
     bottom: 0;
     display: none;
 }
@@ -172,7 +172,7 @@ a {
     margin: 0;}
 #infoInt{
     width: 450px;
-    left: 680px;
+    left: 250px;
     bottom: -100px;
     display: none;
 }
@@ -184,18 +184,18 @@ a {
     padding: 10px;
 }
 #infoBm{
-    left: 25px;
-    bottom: -13px;
+    left: 200px;
+    bottom: -135px;
     display: none;
 }
 #infoSiem{
     left: 345px;
-    bottom: -163px;
+    bottom: -150px;
     display: none;
  }
 #infoTd{
-    right: 25px;
-    bottom: -13px;
+    right: 190px;
+    bottom: -100px;
     display: none;
  }
 #infoAd{
