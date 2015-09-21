@@ -44,6 +44,13 @@ body{ background:#fff url(../images/bg.png) repeat-x;font:100%/100% "微軟正�
 	color: #999;
 	margin-right: 10px;
 	}
+.news-txt a{
+	color: #353535;
+	text-decoration: underline;
+}
+.news-txt a:hover{
+	text-decoration: none;
+}
 /*-- index set ---*/
 /*-- about set ---*/
 .summary {padding-bottom:50px}
