@@ -15,8 +15,8 @@ body{ background:#fff url(../images/bg.png) repeat-x;font:100%/100% "微軟正�
 	border-radius: 100px;
 	display: block;height: 15px;
 	background-color: #2d8090;
-	text-indent: 100%; 
-	white-space: nowrap; 
+	text-indent: 100%;
+	white-space: nowrap;
 	overflow: hidden}
 .nav > ul > li > a:hover, .nav > ul > li > .current{background-color: #fedb00}
 .scrollBtn{left:50%;bottom: 1%;display: block}
@@ -205,7 +205,6 @@ body{ background:#fff url(../images/bg.png) repeat-x;font:100%/100% "微軟正�
 /*.bigDataBox .firstBox + .box {border-bottom:1px dotted #020202}*/
 .bigDataBox .firstBox{width: 90%;margin: 0 auto 50px;border-bottom: none;padding-bottom: 10px}
 .bigDataBox .firstBox .left{margin-right: 15px}
-.bigDataBox .firstBox p{margin-top:15px}
 .list-log{
 	margin: 10px 0 20px 35px;
 }
@@ -234,7 +233,7 @@ body{ background:#fff url(../images/bg.png) repeat-x;font:100%/100% "微軟正�
 .contactBox ul{width:40%;margin-top:200px}
 .contactBox ul > li{width: 100%}
 .contactBox ul > li .left, .contactBox ul > li .right{font-size:123.1%}
-.contactBox ul > li .left{	
+.contactBox ul > li .left{
 	color: #0099b0;
 	width:25%}
 .contactBox ul > li .right{
@@ -248,7 +247,7 @@ body{ background:#fff url(../images/bg.png) repeat-x;font:100%/100% "微軟正�
 	width: 209px;
 	font-size:123.1%;
 	text-align: left;
-	display: inline-block;	
+	display: inline-block;
 	line-height:300%}
 .downloadBtn > li{position: relative}
 .supportBox ul > li > a{height: 49px;
@@ -289,7 +288,7 @@ a{text-decoration:none}
 .clearfix:after{clear:both}
 .clearfix{zoom:1}
 .centerContainer{position: relative}
-.absoluteCenter{  
+.absoluteCenter{
   height: 80%;
   /*overflow: auto;*/
   margin: auto;
