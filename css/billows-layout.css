@@ -185,6 +185,10 @@ body{ background:#fff url(../images/bg.png) repeat-x;font:100%/100% "微軟正�
 	color: #0099b0;margin-top: 35px}
 .showCaseBox .box{margin-bottom:50px;width: 86%;margin: 0 auto 30px}
 .showCaseBox .left{margin-right: 10px}
+.case6__box .text:last-child{
+	width: 510px;
+	margin-right: 0;
+}
 /*.showCaseBox .text{width: 610px}*/
 .showCaseBox ul{margin-left: 10px}
 .showCaseBox ul li{font-size:123.1%}
