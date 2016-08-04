@@ -196,8 +196,14 @@ body{ background:#fff url(../images/bg.png) repeat-x;font:100%/100% "微軟正�
 .showCaseBox  ol > li, .list-decimal li{list-style-type: decimal;margin-left: 20px}
 .showCaseBox  ol > li > ul{margin-left: 0}
 .showCaseBox  ol > li > ul > li{list-style-type: none;margin-left: 0}
-.showCaseBox .box--font:not(*:root) li{
-	font-size: 20px;
+
+@media (max-width: 480px){
+
+	.showCaseBox .box--font:not(*:root) li{
+		font-size: 20px;
+		line-height: 200%;
+	}
+
 }
 
 /*-- show Case set ---*/
