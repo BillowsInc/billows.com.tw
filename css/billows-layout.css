@@ -196,6 +196,9 @@ body{ background:#fff url(../images/bg.png) repeat-x;font:100%/100% "微軟正�
 .showCaseBox  ol > li, .list-decimal li{list-style-type: decimal;margin-left: 20px}
 .showCaseBox  ol > li > ul{margin-left: 0}
 .showCaseBox  ol > li > ul > li{list-style-type: none;margin-left: 0}
+.showCaseBox .box--font > li, .showCaseBox .box--font > li li{
+	font-size: 20px;
+}
 /*-- show Case set ---*/
 /*-- Big Data set ---*/
 /*.bigDataBox > h2{margin-bottom: 10px;line-height: 160%}*/
