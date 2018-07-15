@@ -544,6 +544,10 @@ ul, ol {
   height: 80px;
 }
 
+.partner__wrap ul:last-child {
+  margin-top: 50px;
+}
+
 /* contact */
 .contact__map {
   *zoom: 1;
