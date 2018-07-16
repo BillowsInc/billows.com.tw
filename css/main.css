@@ -548,6 +548,11 @@ ul, ol {
   margin-top: 50px;
 }
 
+.partner__wrap ul:last-child li {
+  width: 240px;
+  height: 80px;
+}
+
 /* contact */
 .contact__map {
   *zoom: 1;
