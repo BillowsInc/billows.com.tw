@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script type="text/javascript" >window.jQuery || document.write('<script src="js/vendor/html5shiv.min.js"><\/script>')</script>
+<![endif]-->
+<html lang="zh-TW">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Billows OneMan SOC – SOC資安監控與SIEM資安分析專家，Alienvault代理商。</title>
+	<meta name="robots" content="index">
+	<meta name="title" content="Billows OneMan SOC – SOC資安監控與SIEM資安分析專家，Alienvault代理商。" />
+	<meta name="description" content="Billows OneMan SOC – SOC資安監控與SIEM資安分析專家。 Alienvault 代理商。專注在資安大數據資料的統計分析與可視化，提供優異的資安監控平台（SOC）產品，提供好的服務是 Billows 竣盟科技的使命，資安監控（SIEM SOC）首選，Billows 竣盟科技。"
+	/>
+	<meta name="keywords" content="alienvault, alienvault taiwan, SIEM, SOC, billows, 資安監控平台(SIEM SOC)" />
+	<meta name="author" content="Billows">
+	<meta property="og:title" content="Billows OneMan SOC – SOC資安監控與SIEM資安分析專家，Alienvault代理商。" />
+	<meta property="og:description" content="OneMan SOC – SOC資安監控與SIEM資安分析專家。 Alienvault 代理商。專注在資安大數據資料的統計分析與可視化，提供優異的資安監控平台（SOC）產品，提供好的服務是 Billows 竣盟科技的使命，資安監控（SIEM SOC）首選，Billows 竣盟科技。"
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://billows.com.tw/" />
+	<meta property="og:image" content="http://billows.com.tw/img/logo.png" />
+	<meta property="og:site_name" content="Billows OneMan SOC – SOC資安監控與SIEM資安分析專家，Alienvault代理商。" />
+	<link rel="shortcut icon" href="img/favicon-96x96.png" />
+	<link href="css/vendors/vendors.css" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
+	<script src="js/vendor/ga.js"></script>
+</head>
+
+<body>
+	<div id="home" class="wrapper">
+		<header id="header" class="header">
+			<div class="layout960">
+				<h1 class="l--left">
+					<a href="" class="logo" title="Billows 竣盟科技">
+						<img src="img/billows_logo.png" alt="Billows 竣盟科技">
+					</a>
+				</h1>
+				<nav id="navigate" class="nav l--right">
+					<ul>
+						<li>
+							<a href="#home" title="Home">Home</a>
+						</li>
+						<li>
+							<a href="#about" title="About">About</a>
+						</li>
+						<li>
+							<a href="#products" title="Products">Products</a>
+						</li>
+						<li>
+							<a href="#contact" title="Contact">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="language__family">
+					<li><a href="../index.html" title="正體中文">正體中文</a></li>
+					<li class="current"><a href="index.html" title="EN">EN</a></li>
+				</ul>
+			</div>
+		</header>
+		<div id="bnSlider" class="bannerｚ">
+			<section class="bn__wrap bn--01">
+				<div class="bn__box layout960">
+					<div class="l--left">
+						<h2 class="title--lv1">Alienvault SIEM
+						</h2>
+						<ul class="bn__list">
+							<li>Siem & Logger</li>
+							<li>Ransomware /Malware Detection</li>
+							<li>Vulnerability Assessment</li>
+							<li>Threat Intelligence Exchange</li>
+							<li> User behavioral Analysis</li>
+						</ul>
+						<ul class="bn__award">
+							<li>
+								<img src="img/bn/award01.png" alt="Deloitte Techology Fast">
+							</li>
+							<li>
+								<img src="img/bn/award02.png" alt="SC Best Buy">
+							</li>
+						</ul>
+					</div>
+					<img src="img/bn/bn_alienvault.png" alt="Alienvault SIEM" class="l--right">
+				</div>
+			</section>
+			<section class="bn__wrap bn--02">
+				<div class="bn__box layout960 bn-box--second">
+					<div class="l--left">
+						<h2 class="title--lv1">Easy to operate , easy to understand
+						</h2>
+						<ul class="bn__list">
+							<li>Integration with SIEM and Logger</li>
+							<li>Compliance Management Platform</li>
+							<li>Dynamic Dashboard</li>
+							<li>Deep Learning analysis</li>
+						</ul>
+						<img src="img/bn/sbir01.png" alt="SBIR">
+					</div>
+					<img src="img/bn/bn_soc.png" alt="OneMan SOC Portal" class="l--right">
+				</div>
+			</section>
+			<section class="bn__wrap bn--03">
+				<div class="bn__box layout960">
+					<div class="l--left">
+						<h2 class="title--lv1">Log Master
+						</h2>
+						<ul class="bn__list">
+							<li>Logger</li>
+							<li>Cyber Threat Intelligence</li>
+							<li>Digital Signature </li>
+							<li>Account Behavioral Analysis</li>
+							<li>Change Management </li>
+						</ul>
+						<img src="img/bn/sbir02.png" alt="Taipei City Place Type SBIR">
+					</div>
+					<img src="img/bn/bn_logmaster.png" alt="Log Master" class="l--right">
+				</div>
+			</section>
+			<div id="bnNav" class="bn__nav"></div>
+		</div>
+		<main class="main">
+			<div class="l-content layout960">
+				<section class="success__wrap">
+					<h2 class="l--title title--lv1 l--center">
+						<span>Our Customers</span>
+					</h2>
+					<ul class="success__list">
+						<li>
+							<img src="img/success/s_logo1.png" alt="中華民國外交部">
+						</li>
+						<li>
+							<img src="img/success/s_logo2.png" alt="行政院研考會">
+						</li>
+						<li>
+							<img src="img/success/s_logo3.png" alt="中央研究院">
+						</li>
+						<li>
+							<img src="img/success/s_logo4.png" alt="資策會">
+						</li>
+						<li>
+							<img src="img/success/s_logo5.png" alt="台灣銀行">
+						</li>
+						<li>
+							<img src="img/success/s_logo6.png" alt="聯邦銀行">
+						</li>
+						<li>
+							<img src="img/success/s_logo7.png" alt="中華電信">
+						</li>
+						<li>
+							<img src="img/success/s_logo8.png" alt="中華電信研究院">
+						</li>
+						<li>
+							<img src="img/success/s_logo9.png" alt="馬偕醫院">
+						</li>
+						<li>
+							<img src="img/success/s_logo10.png" alt="桃園機場">
+						</li>
+						<li>
+							<img src="img/success/s_logo11.png" alt="新竹縣政府">
+						</li>
+						<li>
+							<img src="img/success/s_logo12.png" alt="台北科技大學">
+						</li>
+					</ul>
+				</section>
+			</div>
+			<div class="l-content layout960">
+				<section class="news__wrap">
+					<h2 class="l--title title--lv1 l--center">
+						<span>News</span>
+					</h2>
+					<ul class="news__list">
+						<li>
+							<p class="date">2018/06</p>
+							<p class="news-txt">Billows Technology Signed MOU with TWCERT/CC							</p>
+						</li>
+						<li>
+							<p class="date">2018/06</p>
+							<p class="news-txt">Billows Technology became AlienVault’s MSSP Partner
+							</p>
+						</li>
+						<li>
+							<p class="date">2018/02</p>
+							<p class="news-txt">Billows Technology Signed MOU with Institute for Information Industry </p>
+						</li>
+						<li>
+							<p class="date">2016 / 10</p>
+							<p class="news-txt">Billows Technology Won the NTUT Highlight Enterprise Awards of 2016
+							</p>
+						</li>
+						<li>
+							<p class="date">2015 / 10</p>
+							<p class="news-txt">AlienVault Won the Computer Security Awards of 2015</p>
+						</li>
+						<li>
+							<p class="date">2015 / 04</p>
+							<p class="news-txt">Billows Technology LogMaster & AlienVault USM officially incorporated into the list of software and co-suppliers of Taiwan Industrial Bureau</p>
+						</li>
+						<li>
+							<p class="date">2015 / 03</p>
+							<p class="news-txt">Obtained SBIR Grant from Taipei Government</p>
+						</li>
+						<li>
+							<p class="date">2014 / 08</p>
+							<p class="news-txt">Obtained SBIR Grant from Taipei Government 
+							</p>
+						</li>
+						<li>
+							<p class="date">2014 / 01</p>
+							<p class="news-txt">
+								<a href="https://www.alienvault.com/partners/locator#asia-pacific-tab" title=" Became AlienVault Distributor "
+								 target="_blank"> Became AlienVault Distributor </a>
+							</p>
+						</li>
+						<li>
+							<p class="date">2013 / 09</p>
+							<p class="news-txt">Integrated with RFID & Big data to develop an Intelligence IDC Management platform</p>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<div id="about" class="l-content layout960">
+				<section class="about__wrap">
+					<h2 class="l--title title--lv1 l--center">
+						<span>About us</span>
+					</h2>
+					<ul class="about__list l--center">
+						<li>
+							<img src="img/about/about_icon01.png" width="150" height="150" alt="Security Monitoring">
+							<p>Security Monitoring</p>
+						</li>
+						<li>
+							<img src="img/about/about_icon02.png" width="150" height="150" alt="Compliance Management">
+							<p>Compliance Management</p>
+						</li>
+						<li>
+							<img src="img/about/about_icon03.png" width="150" height="150" alt="SIEM">
+							<p>SIEM</p>
+						</li>
+					</ul>
+					<div class="text__wrap">
+						<p>The internet can be a hazardous place, many threats jeopardize protecting personal and sensitive information. Information technology is everyone’s responsibility. That’s why Six years ago, Billows Technology began to provide security solutions and services in response to the compliance needs of the International Cyber Security and Protection of Personal Data. </p>
+						<p>Prior to starting our business, Our Team members have gained many years experience in building, operating and managing SIEM/SOC in the fields of government and local enterprises. Since its inception, the company has been pursing productive innovation. In addition to focusing on new product development, we acquired the distributorship of AlienVault. And due to years of experiences in system integration, we successfully established SIEM/SOC for our customers and gained their recognitions.</p>
+					</div>
+				</section>
+			</div>
+			<div class="l-content layout960">
+				<section class="service__wrap">
+					<h2 class="l--title title--lv1 l--center">
+						<span>WHAT is our service?</span>
+					</h2>
+					<div class="text__wrap">
+						<ul class="list--disc">
+							<li>Alienvault USM </li>
+							<li>Billows Log Master </li>
+							<li>Security Portal </li>
+							<li>Consultant Tutorship </li>
+						</ul>
+						<div id="managePic" class="service__chart manage-pic">
+							<a class="step1" href="#" title="Log Management 1.導入階段">Log Management 1.導入階段</a>
+							<a class="step2" href="#" title="S.I.E.M.2.整合階段">S.I.E.M.2.整合階段</a>
+							<a class="step3" href="#" title="Security Portal 3.發展階段">Security Portal 3.發展階段</a>
+						</div>
+						<div class="l--center">
+							<p>Three stages “Implement, Integration, Development” to build the most secure and easy manage Security Operation Center. </p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="l-content layout960">
+				<section class="whouse__wrap">
+					<h2 class="l--title title--lv1 l--center">
+						<span>WHO can use it?</span>
+					</h2>
+					<ul>
+						<li>
+							<img src="img/use/use_icon01.png" width="151" height="150" alt="學校">
+						</li>
+						<li>
+							<img src="img/use/use_icon02.png" width="151" height="151" alt="政府單位">
+						</li>
+						<li>
+							<img src="img/use/use_icon03.png" width="151" height="151" alt="金融單位">
+						</li>
+						<li>
+							<img src="img/use/use_icon04.png" width="151" height="151" alt="電信">
+						</li>
+					</ul>
+					<div class="text__wrap l--center">
+						<p>Education, Government, Financial institutions, Telecommunications, and other companies and units that need to automate audits, personal data, and security.</p>
+					</div>
+				</section>
+			</div>
+			<div id="products">
+				<div class="l-content layout960">
+					<section class="usm__wrap">
+						<h2 class="l--title title--lv1 l--center">
+							<span>Alienvault USM</span>
+						</h2>
+						<div class="text__wrap">
+							<p>Many people often ask me why I bought all of my security products and implement SIEM, but the company system still has some security problems. I always say: ”This is not only a technical issue but also the people and process. Just like you bought a pair of shoes like Michael Jordan, it doesn't mean you can play basketball like him. “ Equipment is only a tool, and it also needs relevant elements (process and people) to effectively secure the environment.</p>
+							<p>SIEM is used to collect and analyze the logs of IT devices to find the abnormal. However, in a real-world environment, it may be impossible to collect complete log into SIEM due to factors such as the technical capabilities of the vendor or host performance. This is also the main reason why most traditional SIEMs do not work as well as it designed to be. In view of this, AlienVault USM provides different data modules "log, traffic, vulnerability, assets, HIDS", etc., in addition to the log correlation function, the cross-correlate different module data, such as Internal traffic data and vulnerability data to improve analyst accuracy。</p>
+						</div>
+						<div class="text__wrap">
+							<div class="alienvault__wrap">
+								<div class="globe-container">
+									<a id="globeOuter" class="globe-outer" href="#">Open Threat Exchange Data</a>
+									<a id="globeMiddle" class="globe-middle" href="#">AlienVault Labs Threat Intelligence</a>
+									<a class="globe-inner" href="#">Unified Security Management Platform</a>
+									<div class="globe-inner-buttons">
+										<a id="btnBm" class="but-bm" href="#">Behavioral Monitoring</a>
+										<a id="btnSiem" class="but-siem" href="#">SIEM</a>
+										<a id="btnTd" class="but-td" href="#">Threat Detection</a>
+										<a id="btnAd" class="but-ad" href="#">Asset Discovery</a>
+										<a id="btnVa" class="but-va" href="#">Vulnerability Assessment</a>
+									</div>
+								</div>
+								<div id="otx" class="globe--info" style="display: none;">
+									<img src="img/otx-diagram.png" alt="otx-database">
+								</div>
+								<div id="infoInt" class="globe--info" style="display: none;">
+									<ul class="check-list">
+										<li>
+											<strong>Correlation directives –</strong> USM ships with over 2,000 pre-defined rules that translate raw events into specific,
+											actionable threat information. Regular updates to these rules ensure that you are covered on the latest threats.</li>
+										<li>
+											<strong>Network IDS signatures –</strong> detect the latest threats in your network</li>
+										<li>
+											<strong>Host IDS signatures –</strong> detect the latest threats on your critical systems</li>
+										<li>
+											<strong>Asset discovery signatures –</strong> identify the latest operating systems, applications, and device information</li>
+										<li>
+											<strong>Vulnerability assessment signatures –</strong> find the latest vulnerabilities on your systems</li>
+										<li>
+											<strong>Reporting modules –</strong> provide new ways of viewing data about your environment and satisfying auditor requests</li>
+										<li>
+											<strong>Dynamic incident response templates –</strong> customized guidance on how to respond to each alert</li>
+										<li>
+											<strong>Newly supported data source plugins –</strong> expand your monitoring footprint</li>
+									</ul>
+								</div>
+								<div id="infoBm" class="globe--info" style="display: none;">
+									<h3 class="globe---title">Behavioral Monitoring</h3>
+									<p>Identify suspicious behavior and potentially compromised systems</p>
+									<ul class="clearfix">
+										<li>Netflow Analysis</li>
+										<li>Service Availability Monitoring</li>
+										<li>Full packet capture</li>
+									</ul>
+									<p>
+										<img alt="Behavioral Monitoring" src="img/behavioral-monitoring-sml.png" style="width: 160px; height: 102px;">
+									</p>
+								</div>
+								<div id="infoSiem" class="globe--info" style="display: none;">
+									<h3 class="globe---title">SIEM</h3>
+									<p>Correlate and analyze security event data from across your network</p>
+									<ul>
+										<li>Log Management</li>
+										<li>Event Correlation</li>
+										<li>Incident Response</li>
+										<li>Reporting and Alarms</li>
+									</ul>
+									<p>
+										<img alt="SIEM" src="img/security-intelligence-sml.png" style="width: 160px; height: 102px;">
+									</p>
+								</div>
+								<div id="infoTd" class="globe--info">
+									<h3 class="globe---title">Threat Detection</h3>
+									<p>Detect malicious traffic on your network</p>
+									<ul>
+										<li>Network IDS</li>
+										<li>Host IDS</li>
+										<li>File Integrity Monitoring (FIM)</li>
+									</ul>
+									<p>
+										<img alt="Threat Detection" src="img/threat-detection-sml.png" style="width: 160px; height: 102px;">
+									</p>
+								</div>
+								<div id="infoAd" class="globe--info">
+									<h3 class="globe---title">Asset Discovery</h3>
+									<p>Find all assets on your network before a bad actor does</p>
+									<ul class="clearfix">
+										<li>Active Network Scanning</li>
+										<li>Passive Network Monitoring</li>
+										<li>Asset Inventory</li>
+									</ul>
+									<p>
+										<img alt="Asset Discovery" src="img/asset-discovery-sml.png" style="width: 160px; height: 102px;">
+									</p>
+								</div>
+								<div id="infoVa" class="globe--info">
+									<h3 class="globe---title">Vulnerability Assessment</h3>
+									<p>Identify systems on your network that are vulnerable to exploits</p>
+									<ul class="clearfix">
+										<li>Network Vulnerability Testing</li>
+										<li>Continuous Vulnerability Monitoring</li>
+									</ul>
+									<p>
+										<img alt="Vulnerability Assessment" src="img/vulnerability-assessment-sml.png" style="width: 160px; height: 102px;">
+									</p>
+								</div>
+							</div>
+							<div class="text__alienvault-table">
+								<table class="usm-compare">
+									<tbody>
+										<tr>
+											<th>Features:</th>
+											<th>AlienVault USM</th>
+											<th>Traditional SIEM</th>
+										</tr>
+										<tr>
+											<td class="table-cat" colspan="3">Management:</td>
+										</tr>
+										<tr>
+											<td>Log Management</td>
+											<td class="pro-cell center--hook">
+												<img alt="Yes" src="img/icn-checkmark.png" style="width: 18px; height: 14px;">
+											</td>
+											<td class="pro-cell center--hook">
+												<img alt="Yes" src="img/icn-checkmark.png" style="width: 18px; height: 14px;">
+											</td>
+										</tr>
+										<tr>
+											<td>Event Management</td>
+											<td class="pro-cell center--hook">
+												<img alt="Yes" src="img/icn-checkmark.png" style="width: 18px; height: 14px;">
+											</td>
+											<td class="pro-cell center--hook">
+												<img alt="Yes" src="img/icn-checkmark.png" style="width: 18px; height: 14px;">
+											</td>
+										</tr>
+										<tr>
+											<td>Event Correlation</td>
+											<td class="pro-cell center--hook">
+												<img alt="Yes" src="img/icn-checkmark.png" style="width: 18px; height: 14px;">
+											</td>
+											<td class="pro-cell center--hook">
+												<img alt="Yes" src="img/icn-checkmark.png" style="width: 18px; height: 14px;">
+											</td>
+										</tr>
+										<tr>
+											<td>Reporting</td>
+											<td class="pro-cell center--hook">
+												<img alt="Yes" src="img/icn-checkmark.png" style="width: 18px; height: 14px;">
+											</td>
+											<td class="pro-cell center--hook">
+												<img alt="Yes" src="img/icn-checkmark.png" style="width: 18px; height: 14px;">
+											</td>
+										</tr>
+										<tr>
+											<td>Trouble Ticketing</td>
+											<td class="pro-cell">Built-In</td>
+											<td class="con-cell">$$
+												<br>
+												<span class="note">(3rd-party product that requires integration)</span>
+											</td>
+										</tr>
+										<tr>
+											<td class="table-cat" colspan="3">Security Monitoring Technologies:</td>
+										</tr>
+										<tr>
+											<td>Asset Discovery</td>
+											<td class="pro-cell">Built-In</td>
+											<td class="con-cell">$$
+												<br>
+												<span class="note">(3rd-party product that requires integration)</span>
+											</td>
+										</tr>
+										<tr>
+											<td>Network IDS</td>
+											<td class="pro-cell">Built-In</td>
+											<td class="con-cell">$$
+												<br>
+												<span class="note">(3rd-party product that requires integration)</span>
+											</td>
+										</tr>
+										<tr>
+											<td>Host IDS</td>
+											<td class="pro-cell">Built-In</td>
+											<td class="con-cell">$$
+												<br>
+												<span class="note">(3rd-party product that requires integration)</span>
+											</td>
+										</tr>
+										<tr>
+											<td>Netflow</td>
+											<td class="pro-cell">Built-In</td>
+											<td class="con-cell">$$
+												<br>
+												<span class="note">(3rd-party product that requires integration)</span>
+											</td>
+										</tr>
+										<tr>
+											<td>Full Packet Capture</td>
+											<td class="pro-cell">Built-In</td>
+											<td class="con-cell">$$
+												<br>
+												<span class="note">(3rd-party product that requires integration)</span>
+											</td>
+										</tr>
+										<tr>
+											<td>File Integrity Monitoring</td>
+											<td class="pro-cell">Built-In</td>
+											<td class="con-cell">$$
+												<br>
+												<span class="note">(3rd-party product that requires integration)</span>
+											</td>
+										</tr>
+										<tr>
+											<td>Vulnerability Assessment</td>
+											<td class="pro-cell">Built-In</td>
+											<td class="con-cell">$$
+												<br>
+												<span class="note">(3rd-party product that requires integration)</span>
+											</td>
+										</tr>
+										<tr>
+											<td class="table-cat" colspan="3">Additional Capabilities:</td>
+										</tr>
+										<tr>
+											<td>Continuous Threat Intelligence</td>
+											<td class="pro-cell">Built-In</td>
+											<td class="con-cell">Not Available</td>
+										</tr>
+										<tr>
+											<td>Unified Management Console for security monitoring technologies</td>
+											<td class="pro-cell">Built-In</td>
+											<td class="con-cell">Not Available</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="l-content layout960">
+					<section class="showcase__wrap">
+						<h2 class="l--title title--lv1 l--center">
+							<span>Show Case</span>
+						</h2>
+						<ul class="showcase__list">
+							<li>
+								<figure class="l--left">
+									<img src="img/bigdata/show_case_icon01.png" alt="Internal Server connected to malicious website">
+								</figure>
+								<div class="text__warp l--left">
+									<div class="showcase__title">
+										<div class="l--left">Case 1</div>
+										<h3 class="l--left">Internal Server connected to malicious website</h3>
+									</div>
+									<ul class="showcase__list--lv1 list--disc">
+										<li>Related Devices：Checkpoint Firewall(Log) & AlienVault Threat Intelligence System</li>
+										<li>Scenarios：
+											<ol class="showcase__list--lv2 list--decimal">
+												<li>The internal server is suspected of being installed with a backdoor and sending data to an external malicious website.</li>
+												<li>When the internal server performs general web browsing, there may be an advertisement page embedded in the malicious link.	</li>
+											</ol>
+										</li>
+										<li>Response：
+											<ol class="showcase__list--lv2 list--decimal">
+												<li>Confirm the external malicious website whether it’s still dangerous</li>
+												<li>Check if the internal server is implanted with malware and clean it</li>
+												<li>Evaluate possible damage, change password immediately or reinstall the system</li>
+											</ol>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<figure class="l--left">
+									<img src="img/bigdata/show_case_icon02.png" alt="The Sender is from a malicious IP">
+								</figure>
+								<div class="text__warp l--left">
+									<div class="showcase__title">
+										<div class="l--left">Case 2</div>
+										<h3 class="l--left">The Sender is from a malicious IP</h3>
+									</div>
+									<ul class="showcase__list--lv1 list--disc">
+										<li>Related Devices：Checkpoint Firewall(Log) & AlienVault Threat Intelligence System</li>
+										<li>Scenarios：
+											<ol class="showcase__list--lv2 list--decimal">
+												<li>Suspected external malicious server was sending mails to internal server</li>
+											</ol>
+										</li>
+										<li>Response：
+											<ol class="showcase__list--lv2 list--decimal">
+												<li>Confirm the internal server whether has a mail service</li>
+												<li>Tracking the external sending server whether is abnormal</li>
+												<li>Confirm whether the email is sent successfully, and notify the recipient to check if the email is abnormal or delete it directly.</li>
+												<li>If check it’s a malicious mail or the mail is already open, proceed clearing the malicious software and evaluated for possible damage.</li>
+											</ol>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<figure class="l--left">
+									<img src="img/bigdata/show_case_icon03.png" alt="Webpage Attack">
+								</figure>
+								<div class="text__warp l--left">
+									<div class="showcase__title">
+										<div class="l--left">Case 3</div>
+										<h3 class="l--left">Webpage Attack</h3>
+									</div>
+									<ul class="showcase__list--lv1 list--dics">
+										<li>Related Devices：Intrusion Prevention Device and AlienVault vulnerability Scanning database</li>
+										<li>Scenarios：
+											<ol class="showcase__list--lv2 list--decimal">
+												<li>The web server is being attack by a hacker, for example
+													<ul>
+														<li>Execution instruction</li>
+														<li>Stealing passwords</li>
+														<li>Stealing database data</li>
+													</ul>
+												</li>
+											</ol>
+										</li>
+										<li>
+											Response：
+											<ol class="showcase__list--lv2 list--decimal">
+												<li>Confirm that the web attack was whether successful and evaluate the damage that may be caused</li>
+												<li>Immediately reinforce all webpages’ vulnerability and re-execute vulnerability scans</li>
+											</ol>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<figure class="l--left">
+									<img src="img/bigdata/show_case_icon04.png" alt="Blocking Service Attack">
+								</figure>
+								<div class="text__warp l--left">
+									<div class="showcase__title">
+										<div class="l--left">Case 4</div>
+										<h3 class="l--left">Blocking Service Attack</h3>
+									</div>
+									<ul class="showcase__list--lv1 list--dics">
+										<li>Related Intrusion Prevention Device </li>
+										<li>
+											Scenarios：
+											<ol class="showcase__list--lv2 list--decimal">
+												<li>Suffering from hackers to perform UDP Flooding attacks</li>
+											</ol>
+										</li>
+										<li>
+											Response：
+											<ol class="showcase__list--lv2 list--decimal">
+												<li>Evaluate damage that may be caused by blocking service attacks</li>
+												<li>If necessary, include the attack IP in the firewall on a short-term blocking list</li>
+											</ol>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<figure class="l--left">
+									<img src="img/bigdata/show_case_icon05.png" alt=" Network Scanning Attack">
+								</figure>
+								<div class="text__warp l--left">
+									<div class="showcase__title">
+										<div class="l--left">Case 5</div>
+										<h3 class="l--left"> Network Scanning Attack</h3>
+									</div>
+									<ul class="showcase__list--lv1 list--dics">
+										<li>Related Device：Intrusive Prevention Device Log</li>
+										<li>
+											Scenarios：
+											<ol class="showcase__list--lv2 list--decimal">
+												<li>Scenarios</li>
+											</ol>
+										</li>
+										<li>
+											Response：
+											<ol class="showcase__list--lv2 list--decimal">
+												<li>Confirm the domain query request from the server is whether legal</li>
+												<li>If necessary, include the attack IP in the firewall on a short-term blocking list</li>
+											</ol>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<figure class="l--left">
+									<img src="img/bigdata/show_case_icon06.png" alt="Brutal attack of password cracking">
+								</figure>
+								<div class="text__warp l--left">
+									<div class="showcase__title">
+										<div class="l--left">Case 6</div>
+										<h3 class="l--left">Brutal attack of password cracking</h3>
+									</div>
+									<ul class="showcase__list--lv1 list--dics">
+										<li>elated Device：Sever System Log and AlienVault NIDS</li>
+										<li>
+											Scenarios：
+											<ol class="showcase__list--lv2 list--decimal">
+												<li>he file transfer service opened by the web server suffers intensive attempts to log in in a short period of time.
+												</li>
+											</ol>
+										</li>
+										<li>
+											Response：
+											<ol class="showcase__list--lv2 list--decimal">
+												<li>Confirm whether the attempted account is a valid account and the password has been guessed or not.</li>
+												<li>Require customers to set more complicated passwords and change them regularly</li>
+												<li>Limit the IP of each account that can be connected if necessary.</li>
+											</ol>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</section>
+				</div>
+				<div class="l-content layout960">
+					<section class="log__wrap">
+						<h2 class="l--title title--lv1 l--center">
+							<span>Log Master</span>
+						</h2>
+						<div class="text__wrap">
+							<figure class="l--left">
+								<img src="img/bigdata/big_data_icon01.png" alt="Log Master">
+							</figure>
+							<div class="l--right">
+								<p>In order to preserve the system data for a long term in response to the compliance, Billows Technology has developed a compliance management platform for many years, in which can effectively confirm the data collection status, collect the customized software log, and assist the customer to simplify the logger implement process.</p>
+								<p>The platform has the ability to operate independently, and can provide a complete log solution with customers' existing log products to meet various log analysis and statistics needs of customers. This platform provides horizontal expansion to increase the overall capacity and performance of the system.</p>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="l-content layout960">
+				<section class="partner__wrap">
+					<h2 class="l--title title--lv1 l--center">
+						<span>Partners</span>
+					</h2>
+					<ul>
+						<li>
+							<a href="http://www.aimtek.com.tw/front/bin/home.phtml" title="凱羿科技有限公司" target="_blank">
+								<img src="img/partner/partner_logo1.png" alt="凱羿科技有限公司">
+							</a>
+						</li>
+						<li>
+							<a href="https://www.alienvault.com/" title="AlienVault" target="_blank">
+								<img src="img/partner/partner_logo2.png" alt="AlienVault">
+							</a>
+						</li>
+						<li>
+							<a href="http://devco.re/" title="DEVCORE 戴夫寇爾" target="_blank">
+								<img src="img/partner/partner_logo3.png" alt="DEVCORE 戴夫寇爾">
+							</a>
+						</li>
+						<li>
+							<a href="http://www.jnsun.com.tw/" title="JNSUNTECH 鎮陞科技" target="_blank">
+								<img src="img/partner/partner_logo4.png" alt="JNSUNTECH 鎮陞科技">
+							</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="https://www.alienvault.com/partners/locator#asia-pacific" title="AlienVault Partner" target="_blank">
+								<img src="img/partner/logo-160x80-alienvault-partner.png" alt="AlienVault Partner">
+							</a>
+						</li>
+						<li>
+							<a href=" https://www.iii.org.tw/" title="資策會" target="_blank">
+								<img src="img/partner/logo-160x80-iii.png" alt="資策會">
+							</a>
+						</li>
+						<li>
+							<a href="https://twcert.org.tw" title="TWCERT/CC 台灣電腦網路危機處理暨協調中心" target="_blank">
+								<img src="img/partner/logo-160x80-tw-cert.png" alt="TWCERT/CC 台灣電腦網路危機處理暨協調中心">
+							</a>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<div id="contact" class="l-content layout960">
+				<section class="contact__warp">
+					<h2 class="l--title title--lv1 l--center">
+						<span>Contact us</span>
+					</h2>
+					<figure class="contact__map">
+						<iframe class="l--left col-7" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2546.9259677605073!2d121.52591446728579!3d25.05437678161973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a967addee4a7%3A0x97be8a1c117f2f67!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDmlrDnlJ_ljJfot6_kuozmrrUyOeiZnw!5e0!3m2!1szh-TW!2stw!4v1506507060992"
+						 width="550" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<figcaption class="l--left col-5">
+							<ul>
+								<li>
+									<div class="l--left col-2">Office</div>
+									<div class="l--left col-10">12F., No 29-1, Sinsheng N. Rd., Jhongshan Dist., Taipei City 104, Taiwan (R.O.C)
+									</div>
+								</li>
+								<li>
+									<div class="l--left col-2">Tel</div>
+									<div class="l--left col-10">02-25623952</div>
+								</li>
+								<li>
+									<div class="l--left col-2">Fax</div>
+									<div class="l--left col-10">02-25363763</div>
+								</li>
+								<li>
+									<div class="l--left col-2">Line</div>
+									<div class="l--left col-10">＠vri4754n</div>
+								</li>
+								<li>
+									<div class="l--left col-2">Email</div>
+									<div class="l--left col-10">56
+										<a href="mailto:gavin@billows.com.tw" title="Billows 竣盟科技">gavin@billows.com.tw</a>
+									</div>
+								</li>
+							</ul>
+						</figcaption>
+					</figure>
+				</section>
+			</div>
+			<div class="l-content layout960">
+				<section class="support__wrap">
+					<h2 class="l--title title--lv1 l--center">
+						<span>Support</span>
+					</h2>
+					<ul id="supportLink" class="support__list">
+						<li>
+							<a href="#" title="DM">DM</a>
+							<ul class="is--hide">
+								<li>
+									<a href="download/dm/AlienVault-Logger.pdf" target="_blank" title="AlienVault-Logger">AlienVault-Logger</a>
+								</li>
+								<li>
+									<a href="download/dm/AlienVault-Open-Threat-Exchange.pdf" target="_blank" title="AlienVault-Open-Threat-Exchange">AlienVault-Open-Threat-Exchange</a>
+								</li>
+								<li>
+									<a href="download/dm/AlienVault-SIEM.pdf" target="_blank" title="AlienVault-SIEM">AlienVault-SIEM</a>
+								</li>
+								<li>
+									<a href="download/dm/AV-USM.pdf" target="_blank" title="AV-USM">AV-USM</a>
+								</li>
+								<li>
+									<a href="download/dm/LogMaster.pdf" target="_blank" title="LogMaster">LogMaster</a>
+								</li>
+								<!--<li><a href="download/dm/Alienvault_EDM_list_price.pdf" target="_blank" title="Alienvault list price">Alienvault list price</a></li>
+				<li><a href="download/dm/LogMaster_EDM_list_price.pdf" target="_blank" title="LogMaster list price">LogMaster list price</a></li>-->
+							</ul>
+						</li>
+						<li>
+							<a href="#" title="TECH DOCS">TECH DOCS</a>
+							<ul class="is--hide">
+								<li>
+									<a href="download/tech/AlienVault Installation Guide and System Checking.pdf" target="_blank" title="AlienVault Installation Guide and System Checking">AlienVault Installation Guide and System Checking</a>
+								</li>
+								<li>
+									<a href="download/tech/AlienVault-Collect-View.pdf" target="_blank" title="AlienVault 如可收集Windows 事件檢視器資料與linux syslog及文字檔">AlienVault 如可收集Windows 事件檢視器資料與linux syslog及文字檔</a>
+								</li>
+								<li>
+									<a href="download/tech/AlienVault_Plugin_List_-_By_Vendor_and_Function.pdf" target="_blank" title="AlienVault_Plugin_List">AlienVault_Plugin_List</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" title="Support link">Support link</a>
+							<ul class="is--hide">
+								<li>
+									<a href="http://www.alienvault.com" target="_blank" title="Alienvault 原廠網站">Alienvault 原廠網站</a>
+								</li>
+								<li>
+									<a href="http://forums.alienvault.com/discussion/557/alienvault-v4-1-enhancement-summary" target="_blank" title="Alienvault 技術支援網站">Alienvault 技術支援網站</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</main>
+		<footer class="footer l--center layout960">
+			<p>2018 Billows All Rights Reserved.</p>
+		</footer>
+	</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript">window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+	<script type="text/javascript" src="js/vendor/jquery.cycle2.min.js"></script>
+	<script type="text/javascript" src="js/billows.effect.js"></script>
+</body>
+
+</html>
