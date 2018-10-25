@@ -283,16 +283,19 @@ ul, ol {
 .layout960:after {
   clear: both;
 }
-
-.language__family {
+.language__family,
+.try-out__box {
   position: absolute;
   z-index: 1;
-  top: -20px;
   right: 0;
-  display: flex;
   font-size: 13px;
   background-color: #00afca;
   padding: 4px 8px;
+}
+
+.language__family {
+  top: -20px;
+  display: flex;
   border-radius: 0 0 4px 4px
 }
 
@@ -307,11 +310,22 @@ ul, ol {
 .language__family a {
   display: block;
 }
+ 
+.try-out__box {
+  border-radius: 4px 4px 0 0;
+  top: 50px;
+  display: block;
+}
 
+.header .try-out__box {
+  color: #fff
+}
 .header .language__family  .current a,
 .header .language__family  a:hover  {
   color: #fff
 }
+
+
 
 .nav {
   padding-top: 20px;
@@ -396,6 +410,16 @@ ul, ol {
 .bn--03 {
   background-image: url("../img/bn/bn03.jpg");
 }
+.bn--04 {
+  background-image: url("../img/bn/bn04.jpg");
+}
+.bn--04 img {
+  width: 652px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 84px;
+}
+
 .bn__nav {
   position: absolute;
   z-index: 500;
@@ -403,7 +427,7 @@ ul, ol {
   left: 0;
   right: 0;
   text-align: center;
-  width: 100px;
+  width: 120px;
   margin: auto;
 }
 .bn__nav a {
