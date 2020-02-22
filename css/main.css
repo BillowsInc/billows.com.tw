@@ -768,3 +768,35 @@ ul, ol {
 .col-12 {
   max-width: 100%;
 }
+
+.m-left-xs {
+  margin-left: 5px;
+}
+
+.m-left-sm {
+  margin-left: 10px;
+}
+
+.m-left-md {
+  margin-left: 15px;
+}
+
+.m-left-lg {
+  margin-left: 20px;
+}
+
+.m-bottom-xs {
+  margin-bottom: 5px;
+}
+
+.m-bottom-sm {
+  margin-bottom: 10px;
+}
+
+.m-bottom-md {
+  margin-bottom: 15px;
+}
+
+.m-bottom-lg {
+  margin-bottom: 20px;
+}
