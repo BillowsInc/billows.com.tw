@@ -212,7 +212,12 @@ ul, ol {
 .list--disc > li {
   list-style-type: disc;
 }
-
+.list--disc a {
+  text-decoration: underline;
+}
+.list--disc a:hover {
+  text-decoration: none;
+}
 .list--decimal > li {
   list-style-type: decimal;
 }
