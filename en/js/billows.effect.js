@@ -36,7 +36,6 @@
 
 					}, 500 );
 
-
 				} else {
 
 					$htmlBody.animate({
@@ -44,12 +43,8 @@
 						scrollTop: _elementsTop - 100
 
 					}, 500 );
-
-
 				};
 			}
-			
-
 
 		} );
 		
