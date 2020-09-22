@@ -12,41 +12,42 @@
 			$navA = $navLis.find('a');
 
 		
-
+		console.log($navA)
 		$navA.on( 'click', function( e ){
+			if(e.target.innerText != "Blog"){
+				e.preventDefault();
+				var $this = $(this);
+				var $thisHash = $(this.hash);
+				var _elementsTop = $thisHash.offset().top;
 
-			e.preventDefault();
+				//console.log( $this.prop('hash') );
 
-			var $this = $(this);
-			var $thisHash = $(this.hash);
-			var _elementsTop = $thisHash.offset().top;
+				
+				$this.parent().siblings().children().removeClass( 'nav--current' );
 
-			//console.log( $this.prop('hash') );
+				$this.addClass('nav--current');
 
-            
-            $this.parent().siblings().children().removeClass( 'nav--current' );
+				if( $this.prop('hash') == '#home' ){
 
-            $this.addClass('nav--current');
+					$htmlBody.animate({
 
-            if( $this.prop('hash') == '#home' ){
+						scrollTop: 0
 
-            	$htmlBody.animate({
-
-	                scrollTop: 0
-
-	            }, 500 );
-
-
-            } else {
-
-            	$htmlBody.animate({
-
-	                scrollTop: _elementsTop - 100
-
-	            }, 500 );
+					}, 500 );
 
 
-            };
+				} else {
+
+					$htmlBody.animate({
+
+						scrollTop: _elementsTop - 100
+
+					}, 500 );
+
+
+				};
+			}
+			
 
 
 		} );
@@ -233,8 +234,8 @@
 
 		var $supportLink = $('#supportLink'),
 			$sLink1 = $supportLink.find('li').eq(0),
-			$sLink2 = $supportLink.find('li').eq(6),
-			$sLink3 = $supportLink.find('li').eq(10);
+			$sLink2 = $supportLink.find('li').eq(8),
+			$sLink3 = $supportLink.find('li').eq(12);
 
 
 		var hoverEffect = function( links ){
