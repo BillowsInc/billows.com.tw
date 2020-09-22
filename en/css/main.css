@@ -163,7 +163,7 @@ ul, ol {
 }
 
 .l-content {
-  padding-bottom: 25%;
+  padding-bottom: 5%;
 }
 
 .l--center {
@@ -707,8 +707,8 @@ ul, ol {
   background-color: #00c5e3;
 }
 .support__list > li:nth-child(2) {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 
 /* footer */
