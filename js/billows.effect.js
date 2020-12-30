@@ -233,8 +233,8 @@
 
 		var $supportLink = $('#supportLink'),
 			$sLink1 = $supportLink.find('li').eq(0),
-			$sLink2 = $supportLink.find('li').eq(5),
-			$sLink3 = $supportLink.find('li').eq(9);
+			$sLink2 = $supportLink.find('li').eq(4),
+			$sLink3 = $supportLink.find('li').eq(8);
 
 			// console.log($supportLink.find('li'))
 
