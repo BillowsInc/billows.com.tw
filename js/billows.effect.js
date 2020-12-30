@@ -233,8 +233,8 @@
 
 		var $supportLink = $('#supportLink'),
 			$sLink1 = $supportLink.find('li').eq(0),
-			$sLink2 = $supportLink.find('li').eq(6),
-			$sLink3 = $supportLink.find('li').eq(10);
+			$sLink2 = $supportLink.find('li').eq(5),
+			$sLink3 = $supportLink.find('li').eq(9);
 
 
 		var hoverEffect = function( links ){
