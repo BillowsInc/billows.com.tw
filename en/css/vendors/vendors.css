@@ -169,8 +169,10 @@ a {
 }
 
 #otx {
-  width: 390px;
-  left: 290px;
+  /* width: 390px;
+  left: 290px; */
+  width: 368px;
+  left: 248px;
   bottom: 0;
   display: none;
 }
@@ -181,9 +183,12 @@ a {
 }
 
 #infoInt {
-  width: 450px;
+  /* width: 450px;
   left: 250px;
-  bottom: -100px;
+  bottom: -100px; */
+  width: 365px;
+  left: 250px;
+  bottom: -39px;
   display: none;
 }
 
@@ -217,13 +222,15 @@ a {
 }
 
 #infoAd {
-  left: 85px;
+  /* left: 85px; */
+  left: 67px;
   bottom: -135px;
   display: none;
 }
 
 #infoVa {
-  right: 85px;
+  /* right: 85px; */
+  right: 68px;
   bottom: -135px;
   display: none;
 }
