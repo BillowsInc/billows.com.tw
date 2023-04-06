@@ -1008,7 +1008,7 @@ ShadowPlex does not rely on signature of the malware for detection.
 		var confirmBtn = document.getElementsByClassName('swal2-confirm')
 		var interval = setInterval(function () {
 			timer -= 1
-			confirmBtn[0].textContent = timer + ' 秒後自動前往'
+			confirmBtn[0].textContent = 'Will go to after ' + timer + ' second automatically'
 			if (timer == 0) {
 				clearInterval(interval)
 				window.location.replace('https://www.billows.tech')
@@ -1016,9 +1016,9 @@ ShadowPlex does not rely on signature of the malware for detection.
 		}, 1000)
 		Swal.fire({
 			// icon: 'info',
-			title: '網站置換',
-			html: '<p style="line-height: 1.75;">我們網站搬家了，請移駕至 <a href="https://www.billows.tech">https://www.billows.tech</a><br />我們將以新面貌持續為您服務</p>',
-			confirmButtonText: '15 秒後自動前往',
+			title: 'Our website has moved',
+			html: '<p style="line-height: 1.75;">Please go to <a href="https://www.billows.tech">https://www.billows.tech</a><br />We will continue to serve you with a new look</p>',
+			confirmButtonText: 'Will go to after 15 second automatically',
 			allowOutsideClick: false,
 			allowEscapeKey: false,
 			imageUrl: 'img/redirect.png',
