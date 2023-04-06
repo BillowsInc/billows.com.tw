@@ -1022,6 +1022,36 @@
 	<script type="text/javascript">window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 	<script type="text/javascript" src="js/vendor/jquery.cycle2.min.js"></script>
 	<script type="text/javascript" src="js/billows.effect.js"></script>
+    <script type="text/javascript" src="js/sweetalert2/sweetalert2@11.js"></script>
+	<script>
+		var timer = 15
+		var confirmBtn = document.getElementsByClassName('swal2-confirm')
+		var interval = setInterval(function () {
+			timer -= 1
+			confirmBtn[0].textContent = timer + ' 秒後自動前往'
+			if (timer == 0) {
+				clearInterval(interval)
+				window.location.replace('https://www.billows.tech')
+			}
+		}, 1000)
+		Swal.fire({
+			// icon: 'info',
+			title: '網站置換',
+			html: '<p style="line-height: 1.75;">我們網站搬家了，請移駕至 <a href="https://www.billows.tech">https://www.billows.tech</a><br />我們將以新面貌持續為您服務</p>',
+			confirmButtonText: '15 秒後自動前往',
+			allowOutsideClick: false,
+			allowEscapeKey: false,
+			imageUrl: 'img/redirect.png',
+			imageWidth: 62,
+			imageHeight: 62,
+			imageAlt: 'redirect.png'
+		}).then((result) => {
+			if (result.isConfirmed) {
+				clearInterval(interval)
+				window.location.replace('https://www.billows.tech')
+			}
+		})
+	</script>
 </body>
 
 </html>
